@@ -96,7 +96,7 @@ export default {
     
     <!-- <p v-if="info !=null">{{ info }}</p> -->
     <!-- <p v-show="info != null">{{ cityTemp }}</p> -->
-
+<!--  -->
 
     <div v-show="city != ''">
       <div v-if="info != null" class="info-block">
