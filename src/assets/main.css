@@ -1,0 +1,58 @@
+/* @import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  /* height: 100vh; */
+
+  min-height: 100vh;
+  /* Я хз почему минимальныая высота */
+  /* 100vh - 100% высоты экрана */
+  /* background-color: rgb(213, 255, 241); */
+  background: rgb(238,213,174);
+  background: radial-gradient(circle, rgba(238,213,174,1) 20%, rgba(148,233,203,1) 100%);
+
+  display: flex;
+  /* Центровка по горизонтали */
+  justify-content: center;
+  /* Центровка по вертикали */
+  align-items: center;
+}
