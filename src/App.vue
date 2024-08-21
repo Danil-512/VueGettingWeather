@@ -44,13 +44,13 @@ export default {
       this.error = ""
 
       // `` - отформатированная строка
-      // axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=a2ce3a846201aa4ca9be7ad6a803029f`)
-      //   .then(res => (this.info = res))
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&units=metric&appid=a2ce3a846201aa4ca9be7ad6a803029f`)
+        .then(res => (this.info = res.data))
       // Записываем в info то, что получили в качестве ответа в res
       // () => {}
 
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=a2ce3a846201aa4ca9be7ad6a803029f`)
-        .then(res => (this.info = res.data))
+      // axios.get(`https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=a2ce3a846201aa4ca9be7ad6a803029f`)
+      //   .then(res => (this.info = res.data))
     }
   }
 }
@@ -122,6 +122,7 @@ export default {
 
 <style scoped>
 
+
 .info-block p {
   margin: 10px;
 
@@ -161,6 +162,7 @@ export default {
 }
 
 .wrapper {
+  font-size: 2vh;
   min-width: 640;
   min-height: 480px;
   max-width: 3840px;
@@ -207,6 +209,8 @@ export default {
   color: rgba(255, 255, 255, 0.438);
   /* Получилось обратившись к плейсхолдеру */
 
+  font-size: 1.5vh;
+  
   padding: 2px 4px;
 
   /* Обводка */
@@ -216,6 +220,7 @@ export default {
 
 .wrapper ::placeholder {
   color: rgba(255, 255, 255, 0.438);
+  font-size: 1.5vh;
 }
 
 .wrapper p>button {
@@ -227,6 +232,8 @@ export default {
   border-color: rgba(128, 254, 183, 0.511);
   /* margin-left: 15px; */
   margin-top: 20px;
+
+  font-size: 1.5vh;
 
   cursor: pointer;
 
